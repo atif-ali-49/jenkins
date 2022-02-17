@@ -1,0 +1,72 @@
+@import '../../../styles/base/Variables.scss';
+#login {
+    background-image: url("https://media.peacecoin.io/authback.png");
+    background-size: cover;
+    padding: 5% 0;
+    a,a:hover{
+    color:$primaryColor
+    }
+}
+
+#login .login-back {
+    background-image: url("https://media.peacecoin.io/login-back.png");
+    background-size: cover;
+}
+
+#login .section-title {
+    transform: translateX(-25px);
+    margin-top: 20px;
+}
+
+#login form {
+    margin-top: 12%;
+}
+
+#login input{
+    box-shadow: none !important;
+    color: #FFAB0A !important;
+    background-color: transparent;
+    border: 0;
+  }
+
+#login hr {
+    background-color: #FFAB0A !important;
+    color: #FFAB0A !important;
+    transform: translateY(-17px);
+}
+
+#login ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1;
+    /* Firefox */
+}
+
+
+#login .logopeace {
+    margin-top: 20%;
+}
+#login .registerhead {
+    background-color: #000;
+}
+
+@media (max-width:991px) {
+    #login .section-title {
+        transform: unset;
+    }
+    #login {
+        padding: 100px 0;
+    }
+}
+
+@media (max-width:768px) {
+    #login .section-title {
+        color: #fff;
+    }
+    #login .logopeace {
+        margin-top: 10%;
+    }
+}
+.readonly{
+    pointer-events: none;
+}

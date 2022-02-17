@@ -1,0 +1,121 @@
+@import '../../styles/base/Variables.scss';
+#faqs {
+    /* background-image: url("img/phone.png");
+    background-size: cover;
+    height: auto; */
+    background: #E6E6E6;
+    .faqs-background{
+      background-image: url('../../../background/feature-back.jpg');
+      background-size: cover;
+      height: 40vh;
+    }
+    .active{
+       background-color:#000;
+    }
+    .list-cover{
+     background-color: #fff;
+     border-radius: 5px;
+     li{
+    // background-color: #000;
+    margin: 5px;
+    // color: #fff;
+    padding:5px;
+    border-radius: 5px;
+    text-align: center ;
+    .btn{
+     min-width: 150px;
+     font-size:0.9rem;
+    }
+     
+     a{
+      color:#000;
+      display: block;
+      cursor: pointer;
+      font-size: 0.875rem;
+     }
+     .selected-link{
+     background-color: #000;
+     color: #fff;
+     padding:5px;
+     border-radius: 5px;   
+     }
+     }
+    }
+}
+
+#main {
+    border: 1px solid #E6E6E6;
+    // padding-top: 20px;
+}
+
+#main #faq .card {
+    margin-bottom: 30px;
+    border: 0;
+}
+
+#main #faq .card .card-header {
+    border-radius: 0;
+    -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    border-radius: 2px;
+    padding: 0;
+}
+
+#main #faq .card .card-header .btn-header-link {
+    color: #fff;
+    display: block;
+    text-align: left;
+    background: #121212;
+    padding: 10px;
+    font-size: toRem(16);
+    border-radius: 0;
+}
+
+#main #faq .card .card-header .btn-header-link:after {
+    content: "\f107";
+    font-family: 'FontAwesome';
+    font-weight: 900;
+    float: right;
+}
+
+#main #faq .card .card-header .btn-header-link.collapsed {
+    background-color: #121212;
+    color: #fff;
+}
+
+#main #faq .card .card-header .btn-header-link.collapsed:after {
+    content: "\f106";
+}
+
+#main #faq .card .collapsing {
+    background: #fff;
+    line-height: 20px;
+}
+
+#main #faq .card .collapse {
+    border: 0;
+}
+
+#main #faq .card .collapse.show {
+    background: #fff;
+    line-height: 20px;
+    color: #222;
+}
+#main #faq .card-body{
+    font-size: toRem(15);
+}
+
+#faqs .section-title:after {
+    border-bottom: 0.2em solid #fff;
+}
+
+@media screen and (max-width: 991px) {
+    #faqs h3{
+        margin: 20px 0;
+    }
+    #main {
+        margin: 10px 0;
+        border: 1px solid #E6E6E6;
+        padding-top: 10px;
+    }
+}

@@ -1,0 +1,40 @@
+@import '../../../styles/base/Variables.scss';
+
+.navbar{
+    border-bottom: 1px solid $primaryColor;
+    background-color: rgba(($primaryColor), 0.8) !important;
+   
+    .navbar-collapse .nav-link{
+       margin-right: 50px ;
+   }
+   a {
+    color:#fff !important;
+    font-size: toRem(18);
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.navbar-collapse a:hover{
+    transform: translateY(-1px);
+    color:$primaryColor !important;
+}
+    .active{
+        color: $primaryColor !important;
+        font-weight: 500;
+       
+    }
+  
+}
+@media screen and (max-width: 991px) {
+    .navbar{
+border-bottom: 0;
+}
+}
+@media screen and (max-width: 512px) {
+    .navbar-brand{
+    width: 180px;
+    }
+    .navbar-brand img{
+    max-width: 100%;
+    margin-right: 0;
+}
+}

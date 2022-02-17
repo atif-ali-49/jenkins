@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="../assets/css/custom.css" rel="stylesheet" />
+    <title>Peaccoin 2 admin</title>
+  </head>
+
+  <body>
+    <!-- header -->
+
+    <header class="p-3 bg-dark">
+      <div class="container-fluid">
+        <div
+          class="
+            d-flex
+            flex-wrap
+            align-items-center
+            justify-content-center justify-content-lg-start
+          "
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none"
+          >
+            <img
+              class="pr-5"
+              src="../assets/images/logo-small.png"
+              alt="image"
+            />
+          </a>
+
+          <ul
+            class="
+              nav
+              col-12 col-lg-auto
+              me-lg-auto
+              mb-2
+              justify-content-center
+              mb-md-0
+              pl-5
+            "
+          >
+            <li><a href="#" class="nav-link px-2 link-light">Temp link</a></li>
+            <li><a href="#" class="nav-link px-2 link-light">Temp link</a></li>
+            <li><a href="#" class="nav-link px-2 link-light">Temp link</a></li>
+            <li><a href="#" class="nav-link px-2 link-light">Temp link</a></li>
+          </ul>
+
+          <div class="dropdown text-end">
+            <a
+              href="#"
+              class="d-block link-dark text-decoration-none dropdown-toggle"
+              id="dropdownUser1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="../assets/images/avatar-lg.png"
+                width="40px"
+                height="40px"
+                alt="image"
+              />
+            </a>
+            <ul
+              class="dropdown-menu text-small"
+              aria-labelledby="dropdownUser1"
+            >
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- header end -->
+
+    <div class="d-flex">
+      <!-- sidebar -->
+      <aside
+        class="
+          sidebar
+          d-flex
+          flex-column flex-shrink-0
+          p-3
+          text-white
+          bg-dark
+          border-top border-secondary
+        "
+        style="width: 280px"
+      >
+        <!-- <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none pr-5">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4">Sidebar</span>
+        </a> -->
+
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#home"></use>
+              </svg>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#speedometer2"></use>
+              </svg>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#table"></use>
+              </svg>
+              Orders
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#grid"></use>
+              </svg>
+              Products
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#people-circle"></use>
+              </svg>
+              Customers
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- sidebar -->
+
+      <!-- main -->
+      <main class="p-5 w-100 bg-light">
+        <div class="page-wrapper">
+          <header>
+            <h1 class="h2">Add New Smart Package</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  new package
+                </li>
+              </ol>
+            </nav>
+          </header>
+
+          <div class="page-content-wrapper mt-3 px-3 py-3 bg-white">
+            <div class="container">
+                 <div class="d-flex justify-content-between mb-3">
+                   
+                      <button id="add-button" class="btn btn-primary ">+ Add</button>      
+                      <!-- <button  id="remove-button" class="btn btn-primary">Remove</button>  -->
+                    
+                </div>     
+             
+               <!-- <a id="remove-button" class="float-end ml-2" href="#">Remove row</a> -->
+                        
+              <form>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <label for="title" class="form-label">Title</label>
+                    <input
+                      value="{{old('title')}}"
+                      name="title"
+                      type="name"
+                      class="form-control"
+                      id="title"
+                    />
+                  </div>
+                  <div class="col-lg-6">
+                    <label for="price" class="form-label">price</label>
+                    <input
+                      value="{{old('price')}}"
+                      name="price"
+                      type="name"
+                      class="form-control"
+                      id="price"
+                    />
+                  </div>
+                 </div>
+                  <div id="dynamic-field-1" class="form-group dynamic-field">
+                 <div class="row mt-3">
+                  <div class="col-lg-5">
+                    <label for="address-1" class="form-label"
+                      >Select Category</label
+                    >
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option value="1">Silver</option>
+                      <option value="2">Gold</option>
+                      <option value="3">Platinum</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-5">
+                      <label for="Peacecoins" class="form-label"
+                        >Number of Peacecoins</label
+                      >
+                      <input
+                        value="{{old('totalCoins')}}"
+                        name="totalCoins"
+                        type="name"
+                        class="form-control"
+                        id="totalCoins"
+                         id="field"
+                      />
+                      
+                    
+                  </div>
+                    <a href="javascript:void(0);" class="removeLink">Remove</a>
+                  </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- main end -->
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script >
+        $(document).ready(function() {
+  var buttonAdd = $("#add-button");
+  // var buttonRemove = $("#remove-button");
+  var buttonRemove = $(".removeLink");
+  var className = ".dynamic-field";
+  var count = 0;
+  var field = "";
+  var maxFields = 100;
+
+  function totalFields() {
+    return $(className).length;
+  }
+
+  function addNewField() {
+    count = totalFields() + 1;
+    field = $("#dynamic-field-1").clone();
+    field.attr("id", "dynamic-field-" + count);
+    field.children("label").text("Field " + count);
+    field.find("input").val("");
+    $(className + ":last").after($(field));
+  }
+
+  // function removeLastField() {
+  //   if (totalFields() > 0) {
+  //     $(className + ":last").remove();
+  //   }
+  // }
+  function removeLastField() {
+    $this = $(this);
+    if (totalFields() > 1) {
+      $(this).closest('.dynamic-field').remove();
+    }
+  }
+
+  function removeField() {
+    if (totalFields() > 0) {
+      // $(className + ":last").remove();
+      $(this).closest('.dynamic-field').remove();
+    }
+  }
+
+  function enableButtonRemove() {
+    if (totalFields() === 2) {
+      buttonRemove.removeAttr("disabled");
+      buttonRemove.addClass("shadow-sm");
+    }
+  }
+
+  function disableButtonRemove() {
+    if (totalFields() === 1) {
+      buttonRemove.attr("disabled", "disabled");
+      buttonRemove.removeClass("shadow-sm");
+    }
+  }
+
+  function disableButtonAdd() {
+    if (totalFields() === maxFields) {
+      buttonAdd.attr("disabled", "disabled");
+      buttonAdd.removeClass("shadow-sm");
+    }
+  }
+
+  function enableButtonAdd() {
+    if (totalFields() === (maxFields - 1)) {
+      buttonAdd.removeAttr("disabled");
+      buttonAdd.addClass("shadow-sm");
+    }
+  }
+
+  buttonAdd.click(function() {
+    addNewField();
+    enableButtonRemove();
+    disableButtonAdd();
+  });
+
+
+ $(document).on("click",".removeLink",function(e) {
+    if (totalFields() > 1) {
+      e.target.closest('.dynamic-field').remove();
+      disableButtonRemove();
+      enableButtonAdd();
+    }
+ });
+
+  // buttonRemove.on( "click", function() {
+    
+  //   removeLastField();
+  //   // removeField();
+  //   disableButtonRemove();
+  //   enableButtonAdd();
+  // });
+});
+    </script>
+  </body>
+</html>

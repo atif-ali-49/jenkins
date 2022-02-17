@@ -1,0 +1,40 @@
+@import '../../styles/base/Variables.scss';
+.business-promotion{
+.myContainer{
+background-image: url("../../../../src/background/business-promotion.png");
+background-size: cover;
+height: 50vh;
+}
+h2{
+line-height: 1.1;
+text-shadow: 1px 1px 3px rgba(150, 150, 150, 0.69);
+}
+// ul {
+//   list-style: none;
+// }
+
+// ul li::before {
+//   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+//   color:$primaryColor ; /* Change the color */
+//   font-weight: bold; /* If you want it to be bold */
+//   display: inline-block; /* Needed to add space between the bullet and the text */
+//   width: 1em; /* Also needed for space (tweak if needed) */
+//   margin-left: -1em; /* Also needed for space (tweak if needed) */
+//   font-size: 20px;
+// }
+// ol{
+// padding-left:20px;
+// }
+// ol li{
+// margin:5px 0;
+// }
+.textPrimary{
+color: $primaryColor;
+font-weight: 500;
+}
+.businessDetailBtn{
+background-color: $primaryColor;
+min-width: 120px;
+border: 0;
+}
+}

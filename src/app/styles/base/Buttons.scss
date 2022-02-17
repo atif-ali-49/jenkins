@@ -1,0 +1,20 @@
+.primaryButton{
+    color: #fff;
+    background-color: $primaryColor;
+    border-radius: 8px;
+    transition: .7s;
+    font-size: toRem(20);
+    outline: 0;
+    border: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.primaryButton:hover{
+    color: $primaryColor;
+    background-color: #000;
+    border-radius: 8px;
+    transition: .7s;
+    box-shadow: 0px 1px 6px -3px rgba(239,147,24,0.75);
+    -webkit-box-shadow: 0px 1px 6px -3px rgba(239,147,24,0.75);
+    -moz-box-shadow: 0px 1px 6px -3px rgba(239,147,24,0.75);
+}

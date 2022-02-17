@@ -1,0 +1,97 @@
+@import '../../../../styles/base/Variables.scss';
+
+.noncrypto-peacevision{
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        justify-content: center;
+
+        svg{
+            font-size: 60px;
+            color: $primaryColor;
+        }
+        .vert-move {
+            -webkit-animation: mover 1s infinite  alternate;
+            animation: mover 1s infinite  alternate;
+        }
+        .vert-move {
+            -webkit-animation: mover 1s infinite  alternate;
+            animation: mover 1s infinite  alternate;
+        }
+        @-webkit-keyframes mover {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+        @keyframes mover {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+    }
+     .nav-tabs .nav-item .nav-link{
+        width:200px;
+        margin: 10px 25px;
+        padding:15px 0 10px 0;       
+        border-radius: 10px;
+    }
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item .nav-link {
+        color: $headColor;
+         background-color:#d7d7d7;
+        border-color: #dee2e6 #dee2e6 #fff;     
+    }
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        color: #fff;
+         background-color:$primaryColor;
+        border-color: #dee2e6 #dee2e6 #fff;
+
+        svg{
+            color: #fff;
+        }
+    }
+    .nav-tabs h3{
+        font-size: toRem(19);
+        margin-top: 10px;
+    }
+    img{
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .noncrypto-peacevision{
+       .nav-tabs img{
+           width: 50px;
+       }
+       .nav-tabs .nav-item .nav-link {
+        width:150px;
+       }
+  
+       .nav svg{
+           font-size: 40px;
+       }
+         .nav-tabs .nav-item .nav-link{
+        width:200px;
+        margin: 10px 25px;
+        padding:15px 0 10px 0;       
+        border-radius: 10px;
+    }
+  }
+
+ }
+ @media screen and (max-width: 512px) {
+    .noncrypto-peacevision{
+        .nav-tabs img{
+            width: 50px;
+        }
+        .nav-tabs .nav-item .nav-link {
+         width:130px;
+         margin: 10px 15px;
+        }
+
+ 
+   }
+  }
+
+
+ 

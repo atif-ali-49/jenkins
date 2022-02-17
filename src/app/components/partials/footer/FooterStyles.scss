@@ -1,0 +1,66 @@
+// Footer sass here
+@import '../../../styles/base/Variables.scss';
+.footer-cover{
+    background:#252525;
+    h3{
+        color: #fff;
+        font-weight: 300;
+    }
+    p{
+        color: #fff;
+        font-weight: 300;
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+    h2{
+        color: $primaryColor;
+        margin-bottom: 0;
+        line-height: 1;
+        font-size: 1.5rem;
+    }
+    small{
+        color: #fff;
+        font-size: 0.6rem;
+    }
+    hr{
+        background-color: #d7d7d7;
+        width: 100%;
+        margin:30px 0;
+    }
+    svg{
+        color: #fff;
+        font-size: 26px;
+        margin-right: 10px;
+    }
+    a{
+        text-decoration:none !important;
+    }
+    svg:hover{
+        color: $primaryColor;
+        transition: 0.7s;
+    }
+    p:hover{
+transition: 0.7s;
+color: $primaryColor;
+cursor: pointer;
+    }
+}
+@media screen and (max-width: 991px) {
+.about-sect,.follow-sect{
+    margin-top: 30px;
+}
+}
+@media screen and (max-width: 512px) {
+    .footer-cover{
+        hr{
+            margin:5px 0;
+        }
+        svg{
+            color: #fff;
+            font-size: 19px;
+            margin-right: 7px;
+        }
+
+    }
+
+}

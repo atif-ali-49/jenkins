@@ -1,0 +1,162 @@
+.genealogyTreeWrapper{
+  min-height: 300px;
+  text-align: center;
+}
+.genealogyTree{
+  display: block;
+  max-width: 1200px;
+  overflow-x:auto;
+  height: auto;
+  scroll-snap-align: center;
+  margin: 0 auto;
+}
+.genealogyTree ul {
+  padding-top: 20px; 
+  position: relative;
+  padding-left: 0px;
+  display: flex;
+  justify-content: center;
+    scroll-snap-align: center;
+}
+
+.genealogyTree li {
+  float: left; text-align: center;
+  list-style-type: none;
+  position: relative;
+  padding: 20px 5px 0 5px;
+}
+.genealogyTree li::before, .genealogyTree li::after{
+  content: '';
+  position: absolute; 
+top: 0; 
+right: 50%;
+  border-top: 2px solid #ccc;
+  width: 50%; 
+height: 18px;
+}
+.genealogyTree li::after{
+  right: auto; left: 50%;
+  border-left: 2px solid #ccc;
+}
+.genealogyTree li:only-child::after, .genealogyTree li:only-child::before {
+  display: none;
+}
+.genealogyTree li:only-child{ 
+  padding-top: 0;
+}
+.genealogyTree li:first-child::before, .genealogyTree li:last-child::after{
+  border: 0 none;
+}
+.genealogyTree li:last-child::before{
+  border-right: 2px solid #ccc;
+  border-radius: 0 5px 0 0;
+  -webkit-border-radius: 0 5px 0 0;
+  -moz-border-radius: 0 5px 0 0;
+}
+.genealogyTree li:first-child::after{
+  border-radius: 5px 0 0 0;
+  -webkit-border-radius: 5px 0 0 0;
+  -moz-border-radius: 5px 0 0 0;
+}
+.genealogyTree ul ul::before{
+  content: '';
+  position: absolute; top: 0; left: 50%;
+  border-left: 2px solid #ccc;
+  width: 0; height: 20px;
+}
+.genealogyTree li a{
+  text-decoration: none;
+  color: inherit;
+  font-family: arial, verdana, tahoma;
+  font-size: 11px;
+  display: inline-block;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.genealogyTree li a:hover+ul li::after, 
+.genealogyTree li a:hover+ul li::before, 
+.genealogyTree li a:hover+ul::before, 
+.genealogyTree li a:hover+ul ul::before{
+  border-color:  #fbba00;
+}
+
+/*--------------memeber-card-design----------*/
+// ---------- //
+.memberBox{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.imageBox{
+  width: 60px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+.imageBox img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+// empty case
+
+.memberBox.emptyCase .imageBox{ 
+  width: 30px;
+  height: 30px;
+}
+
+//
+.memberDetails{
+  margin: 5px 0 5px;
+  white-space: nowrap;
+}
+
+.memberName{
+    font-size: 0.875rem!important;
+    font-weight: normal;
+    margin: 0;
+    width: 70px;
+    overflow : hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+}
+.parent-tooltip{
+color: #222;
+}
+
+@media screen and (max-width: 991px) {
+  .genealogyTree ul{
+    justify-content: flex-start;
+  }
+}
+@media all and (min-width: 1201px){
+  .imageBox {
+    width: 70px;
+    height: 70px;
+    margin: 0 5px;
+  }
+  .imageBox img {
+    width: 60px;
+    height: 60px;
+  }
+  .genealogyTree{
+    display: block;
+    max-width: 1200px;
+  }
+}
+
+@media all and (min-width: 1400px){
+  .genealogyTree{
+    max-width: 1400px;
+  }
+}

@@ -1,0 +1,168 @@
+@import '../../styles/base/Variables.scss';
+
+.card{
+    border-radius:10px;
+    border:none;
+    
+}
+
+.blog
+{
+    .blog-img{
+        position: relative;
+        width: 100%;
+    }
+    img{
+        border-radius: 10px;
+    }
+    .pictures-cover{
+    position: relative;
+}
+.picture-detail{
+    background-color:rgba(($primaryColor),0.6);
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 0 0 9px 9px;
+    .word-wrap{
+      word-wrap: break-word;
+        span{
+            background-color: #adadad;
+            color: #fff;
+            padding: 5px;
+            font-size: toRem(12);
+        }
+        p{
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            line-height: 1.1;
+            font-size: toRem(14);
+    
+        }
+    }
+}
+.blogbar{
+.paragraph{
+   background-color: $primaryColor;
+   color: #fff;
+   clip-path: polygon(0 1%, 82% 0, 100% 100%, 0% 100%);
+   margin-bottom: 0;
+   padding:10px 40px 10px 40px ;
+}
+@media screen and (max-width: 512px) {
+    .paragraph{
+   background-color: $primaryColor;
+   color: #fff;
+   clip-path: polygon(0 1%, 82% 0, 100% 100%, 0% 100%);
+   margin-bottom: 0;
+   padding:5px;
+}
+    }
+}
+.blogcard{
+    h3{
+        font-size: toRem(18);
+        line-height: 1.3;
+    }
+    p{
+        font-size: toRem(14);
+        text-align: justify;
+    }
+    button{
+        font-size:  toRem(16);
+    }
+}
+.rightblog{
+    // border: 1px solid rgb(226, 221, 221);
+    box-shadow: 0px 1px 2px 2px rgba(212, 212, 212, 0.75);
+    -webkit-box-shadow: 0px 1px 2px 2px rgba(212, 212, 212, 0.75);
+    -moz-box-shadow: 0px 1px 2px 2px rgba(212, 212, 212, 0.75);
+    height: 100%;
+.btn-followers button{
+    font-size: toRem(12) !important;
+    margin-top: 10px !important;
+    padding: 5px 10px;
+}
+.btn-followers col{
+    padding-left: 0;
+    padding-right: 0;
+}
+.latestnews{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+p{
+    font-size: toRem(13);
+    color: #252028;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+small{
+    font-size: 10px;
+    color: #929292;
+}
+.smallcard{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+}
+.hover-img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    float: left;
+  }
+  .hover-img img {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  .hover-img:hover img {
+    -webkit-transform: scale(1.1);
+    /* Safari and Chrome */
+    /* Firefox */
+    /* IE 9 */
+    /* Opera */
+    transform: scale(1.2);
+  }
+}
+
+
+#blogdetail{
+	.background{
+		background-image: url('../../../../src/ceo-back.png');
+		background-size: cover;
+	}
+
+	.blog-caption{
+ 		background-color:$primaryColor ;
+ 		border-radius: 3px;
+	 p{
+		 margin-bottom: 0;
+ 		}
+ 	h5{
+ 		margin-bottom: 0;
+ 		}
+	}
+	.signature 
+	{
+     p{
+     margin-bottom: 10px;
+	 color:$primaryColor;
+	 font-weight: 500;
+	 font-size: 1.4rem;
+	 }
+	}
+	.negative-top{
+  margin-top: -40px;
+	}
+}
+@media screen and (max-width: 512px) {
+#blogdetail .negative-top{
+  margin-top: -30px;
+	}
+}

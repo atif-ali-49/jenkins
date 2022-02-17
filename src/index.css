@@ -1,5 +1,96 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+ @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        src: local('Roboto Bold'), local('Roboto-Bold'), url(../src/fonts/Roboto-Bold.ttf) format('truetype');
+    }
+     @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Roboto Regular'), local('Roboto-Regular'), url(../src/fonts/Roboto-Regular.ttf) format('truetype');
+    }
+     @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        src: local('Roboto Medium'), local('Roboto- Medium'), url(../src/fonts/Roboto-Medium.ttf) format('truetype');
+    }
+     @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Roboto Light'), local('Roboto-Light'), url(../src/fonts/Roboto-Light.ttf) format('truetype');
+    }
+.pageHeader{
+    margin: 0 0 24px;
+    padding: 0 0 24px;
+    border-bottom: 1px solid #d6d6d6;
 }
+.sectionMainHeading{
+    font-size: 18px;
+    margin: 0 0 24px;
+}
+.contentBox a{
+text-decoration: none;
+}
+.contentBox{
+overflow-x: hidden !important;
+}
+.loaderWrapper{
+    /* position: fixed; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    min-height: calc( 100vh - 545px );
+    width: 100%;
+    width: 100vw;
+    background-color: #fff;
+    z-index: 99999;
+}
+
+.formFieldWrapper {
+    position: relative;
+}
+.MuiFormHelperText-contained.Mui-error {
+    font-size: 	0.75rem;
+    position: absolute;
+    left: 0;
+    margin: 0;
+    bottom: -18px;
+    color: #f44336;
+    right: auto;
+}
+.MuiLink-root{
+    cursor: pointer;
+}
+
+.btnSmall {min-width: 100px!important;}
+.btnMedium {min-width: 145px!important;}
+.btnLarge {min-width: 180px!important;}
+
+.textUppercase {text-transform: uppercase; }
+.textCapitalize {text-transform: capitalize;}
+
+.LinkDanger{color: #ff0102!important;font-weight:normal;}
+.linkGrey{color: #3a3a3a!important;font-weight:normal;}
+
+.textCenter{text-align:center;}
+
+/* for danger button */
+.btnDanger{
+    background-color: red;
+    color:white;
+}
+.btnSuccess{
+    background-color:green;
+    color:white;
+}
+@media screen and (max-width: 600px) {
+  .contentBox{
+        padding: 16px 8px;
+    }
+}
+

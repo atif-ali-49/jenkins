@@ -1,0 +1,14 @@
+@import '../../../../styles/base/Variables.scss';
+
+.noncrypto-united-peace{
+    background-image: url('../../../../../background/homeUnitedBanner.png');
+    background-size: cover;
+
+    h1{
+        color: #d1d2d3;
+    }
+    p{
+        color: rgb(209, 209, 209);
+        text-align: justify;
+    }
+}

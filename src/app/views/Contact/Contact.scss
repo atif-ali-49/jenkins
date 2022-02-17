@@ -1,0 +1,71 @@
+@import '../../styles/base/Variables.scss';
+#contact{
+}
+#contact .contact-cover {
+    background-image: url("https://media.peacecoin.io/invexback.png");
+    height: auto;
+    background-size: cover;
+}
+
+#contact p {
+    font-size: toRem(18);
+}
+#contact a{
+    text-decoration: none;
+}
+#contact .contact-cover input {
+    border: 0;
+    padding: 5px 10px;
+    outline: $primaryColor;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+#contact .contact-cover textarea {
+    background: transparent;
+    border: 1px solid $primaryColor;
+}
+
+#contact i {
+    border: 3px solid $primaryColor;
+    padding: 10px;
+    border-radius: 50%;
+    color: $primaryColor;
+    font-size: 20px;
+}
+
+#contact .fa-map-marker-alt {
+    border-radius: 50%;
+    padding: 12px;
+    padding-bottom: 9px;
+}
+
+#contact hr.line {
+    background-color: $primaryColor !important;
+    transform: translateY(-20px);
+}
+
+#contact .contact-detail {
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+#contact .contact-detail h3 {
+    display: inline-block;
+    transform: translateY(10px);
+    margin-left: 30px;
+    line-height: 1.2;
+    font-size: toRem(20);
+}
+#contact svg{
+    font-size: 35px;
+    color: $primaryColor;
+}
+#contact a{
+    color:unset;
+}
+@media screen and (max-width: 500px) {
+
+}

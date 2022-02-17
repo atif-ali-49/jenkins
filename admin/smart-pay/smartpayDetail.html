@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="../assets/css/custom.css" rel="stylesheet" />
+    <title>Peaccoin 2 admin</title>
+  </head>
+
+  <body>
+    <!-- header -->
+
+    <header class="p-3 bg-dark">
+      <div class="container-fluid">
+        <div
+          class="
+            d-flex
+            flex-wrap
+            align-items-center
+            justify-content-center justify-content-lg-start
+          "
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none"
+          >
+            <img
+              class="pr-5"
+              src="../assets/images/logo-small.png"
+              alt="image"
+            />
+          </a>
+
+          <ul
+            class="
+              nav
+              col-12 col-lg-auto
+              me-lg-auto
+              mb-2
+              justify-content-center
+              mb-md-0
+              pl-5
+            "
+          >
+            <li><a href="#" class="nav-link px-2 link-light">Temp link</a></li>
+            <li><a href="#" class="nav-link px-2 link-light">Temp link</a></li>
+            <li><a href="#" class="nav-link px-2 link-light">Temp link</a></li>
+            <li><a href="#" class="nav-link px-2 link-light">Temp link</a></li>
+          </ul>
+
+          <div class="dropdown text-end">
+            <a
+              href="#"
+              class="d-block link-dark text-decoration-none dropdown-toggle"
+              id="dropdownUser1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="../assets/images/avatar-lg.png"
+                width="40px"
+                height="40px"
+                alt="image"
+              />
+            </a>
+            <ul
+              class="dropdown-menu text-small"
+              aria-labelledby="dropdownUser1"
+            >
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- header end -->
+
+    <div class="d-flex">
+      <!-- sidebar -->
+      <aside
+        class="
+          sidebar
+          d-flex
+          flex-column flex-shrink-0
+          p-3
+          text-white
+          bg-dark
+          border-top border-secondary
+        "
+        style="width: 280px"
+      >
+        <!-- <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none pr-5">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4">Sidebar</span>
+        </a> -->
+
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#home"></use>
+              </svg>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#speedometer2"></use>
+              </svg>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#table"></use>
+              </svg>
+              Orders
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#grid"></use>
+              </svg>
+              Products
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#people-circle"></use>
+              </svg>
+              Customers
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- sidebar -->
+
+      <!-- main -->
+      <main class="p-5 w-100 bg-light">
+        <div class="page-wrapper">
+          <header>
+            <h1 class="h2">Smart pay Details</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                 Package Detail
+                </li>
+              </ol>
+            </nav>
+          </header>
+
+          <div class="page-content-wrapper mt-3 px-3 py-3 bg-white">
+            <div class="container">   
+              <button class="btn btn-primary float-end">Edit</button>                                  
+   <div class = "card-wrapper">
+  <div class = "card">
+    <!-- card left -->
+    <div class = "product-imgs">
+      <div class = "img-display">
+        <div class = "img-showcase bg-dark p-5">
+          <img src = "../assets/images/goldpkg.png" >
+        </div>
+      </div>
+     
+    </div>
+    <!-- card right -->
+    <div class = "product-content">
+      <h2 class = "product-title">Gold</h2>
+      <!-- <a href = "#" class = "product-link">visit nike store</a> -->
+      <div class = "product-rating">
+        <i class = "fa fa-star"></i>
+        <i class = "fa fa-star"></i>
+        <i class = "fas fa-star"></i>
+        <i class = "fas fa-star"></i>
+        <i class = "fas fa-star-half-alt"></i>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sequi ducimus ex quas, fuga unde voluptatibus optio distinctio in dolore voluptate nisi, doloremque error, soluta assumenda nesciunt atque maxime reiciendis?</span>
+      </div>
+
+      <div class = "product-price">
+        <p class = "last-price">Old Price: <span>$257.00</span></p>
+        <p class = "new-price">New Price: <span>$249.00 (5%)</span></p>
+      </div>
+
+      <div class = "product-detail">
+        <h2>about this item: </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+        <ul>
+		    <h6><i class="fa fa-check text-success" aria-hidden="true"></i> IBO Access</h6>
+			<h6><i class="fa fa-check text-success" aria-hidden="true"></i> 300 Peacecoins Gift</h6>
+			<h6><i class="fa fa-check text-success" aria-hidden="true"></i> CryptoAcademy</h6>
+        </ul>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- main end -->
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script>
+		const imgs = document.querySelectorAll('.img-select a');
+const imgBtns = [...imgs];
+let imgId = 1;
+
+imgBtns.forEach((imgItem) => {
+    imgItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+    });
+});
+
+function slideImage(){
+    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+}
+
+window.addEventListener('resize', slideImage);
+	</script>
+    
+  </body>
+</html>

@@ -1,0 +1,53 @@
+@import '../../../../styles/base/Variables.scss';
+.noncrypto-banner.carousel{
+    border-bottom: 10px solid $primaryColor;
+        h1{
+            color: $primaryColor;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 3.5rem;
+            line-height: 1;
+        }
+        p{
+            color:#fff;
+            font-size: toRem(18);
+            padding: 0 150px;
+        }
+        .carousel-caption{
+           top: 37%;      
+           }       
+}
+
+@media screen and (max-width: 991px) {
+    .noncrypto-banner.carousel{
+   .carousel-caption{
+  position: static;
+  background-color: #000;
+  padding: auto 20px !important;
+  height: 330px;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   .carousel-indicators{
+       display:none;
+   }
+   p{
+       padding-left:10px;
+        padding-right:10px;
+   }
+
+}
+}
+@media screen and (max-width: 512px) {
+  
+    .noncrypto-banner.carousel{
+        h1{
+            font-size: 1.6rem;
+        }
+        p{
+         font-size: 14px;
+        }
+     }
+ 
+ }

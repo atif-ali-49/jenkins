@@ -1,0 +1,19 @@
+#cards {
+    background-image: url('https://media.peacecoin.io/cardbg.png');
+    background-size: cover;
+
+    p {
+        margin: 3% 0 3% 0;
+    }
+
+    .section-title:after {
+        border-bottom: 0.1em solid #fff;
+        width: 6em;
+    }
+
+}
+@media screen and (max-width: 991px) {
+#cards{
+    background-image: unset;
+}
+}

@@ -1,0 +1,48 @@
+
+
+#join {
+    background-image: url("https://media.peacecoin.io/smartback.png");
+    background-size: 100% 100%;
+    height: auto;
+    position: relative;
+    // top: -70px;
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    .section-title:after {
+        border-bottom: 0.1em solid #fff;
+        width: 12em;
+    }
+
+    img {
+        margin: 30px 0;
+    }
+
+    .btn {
+        background-color: #000;
+        color: #fff;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #join {
+        position: static;
+        top: 0;
+        text-align: center;
+
+        img{
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+    }
+    #join h1{
+        margin-top: 50px;
+    }
+    #team{
+        transform:unset;
+        margin-top: 20px;
+    }
+}

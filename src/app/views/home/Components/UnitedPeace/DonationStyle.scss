@@ -1,0 +1,47 @@
+@import '../../../../styles/base/Variables.scss';
+
+.detail-donation-page{
+	.background{
+		background-image: url('../../../../../background/charity2.png');
+		background-size: cover;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+	}
+    .laptop-screen-cover{
+     display: none;
+    }
+    h3{
+     color:$primaryColor ;
+    }
+    .btn-outline-success {
+    color: $primaryColor;
+    border-color:$primaryColor !important;
+    font-weight: 500;
+    min-width: 250px
+    }
+    .btn-outline-success:hover {
+    color: #fff;
+    background-color: $primaryColor;
+    border-color: $primaryColor;
+    }
+
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, .show > .btn-outline-success.dropdown-toggle {
+    color:$primaryColor;
+    background-color:transparent;
+}
+.btn-outline-success:focus, .btn-outline-success.focus {
+    box-shadow: 0 !important;
+    box-shadow: none !important;
+}
+}
+@media screen and (max-width: 991px) {
+    .detail-donation-page{
+     .float-right{
+        display: none;
+     }
+    .laptop-screen-cover{
+     display: block;
+    }
+}
+}

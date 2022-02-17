@@ -1,0 +1,13 @@
+//Colors
+$primaryColor:#EF9318;
+$headColor:#252525;
+$paraColor:#363636;
+//Font-sizes
+$headingSize:50;
+$headingSizeMob:38;
+$subHeadingSize:28; //h3
+$paraSize:17;
+@function toRem($value) {
+    $remValue: ($value / 16) + rem;
+    @return $remValue;
+}

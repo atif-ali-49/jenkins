@@ -1,0 +1,53 @@
+@import '../../styles/base/Variables.scss';
+#ceomsg{
+	.background{
+		background-image: url('../../../../src/ceo-back.png');
+		background-size: cover;
+		display: flex;
+		align-items: center;
+		min-height: 200px;
+	}
+
+	.tony-caption{
+ 		background-color:$primaryColor ;
+ 		border-radius: 3px;
+	 p{
+		 margin-bottom: 0;
+ 		}
+ 	h5{
+ 		margin-bottom: 0;
+ 		}
+	}
+	.signature 
+	{
+     p{
+     margin-bottom: 10px;
+	 color:$primaryColor;
+	 font-weight: 500;
+	 font-size: 1.4rem;
+	 }
+	}
+	.negative-top{
+  margin-top: -70px;
+	}
+}
+@media screen and (max-width: 512px) {
+#ceomsg .negative-top{
+  margin-top: -30px;
+	}
+}
+.ErrorBoundary{
+background-image: url('../../../background/404bg.png');
+background-size: cover;
+// clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 17% 94%, 0 78%, 0 30%, 19% 2%);
+// background-color: beige;
+padding: 50px 30px;
+width: 100%;
+
+}
+@media screen and (max-width: 991px) {
+	.ErrorBoundary{
+     background-size: contain;
+	 background-repeat: no-repeat;
+	}
+}

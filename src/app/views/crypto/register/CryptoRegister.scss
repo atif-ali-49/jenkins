@@ -1,0 +1,146 @@
+@import '../../../styles/base/Variables.scss';
+#registration {
+    background-image: url('https://media.peacecoin.io/authback.png');
+    background-size: cover;
+    .header {
+        background-color: #000;
+        margin-top: 30px;
+        padding: 2px;
+        margin-bottom: 30px;
+    }
+    .header h2 {
+        // color: $secondarycolor;
+        font-size: 30px !important;
+        margin-bottom: 0 !important;
+    }
+    h4 {
+        color: #fff;
+    }
+    .regis-left {
+        background-image: url('https://media.peacecoin.io/regis-left.png');
+        height: auto;
+        width: 100%;
+        background-size: cover;
+        position: relative;
+    }
+    .regis-right {
+        background-image: url('https://media.peacecoin.io/regis-right.png');
+        height: auto;
+        width: 100%;
+        background-size: 100% 100%;
+        padding: 0 50px;
+    }
+    form {
+        margin-top: 6rem;
+        div {
+            font-size: 10px;
+            color: #fff;
+            font-weight: 500;
+        }
+    }
+    input,
+    select {
+        width: 100%;
+        background-color: transparent;
+        margin: 10px auto;
+        height: 40px;
+        border: 1px solid $primaryColor;
+        border-radius: 5px;
+        outline: 0;
+        color: $primaryColor;
+        padding: 5px;
+        font-size: 0.87rem !important;
+    }
+        .radioButton{
+        height: auto;
+        height: 20px;
+        width:  20px;
+        display: block;
+        color: $primaryColor;
+        font-size: 14px;
+        cursor: pointer;
+        }
+    input:focus,
+     :active {
+        background-color: transparent;
+    }
+     ::placeholder {
+        font-size: 14px;
+    }
+    input.check-box {
+        width: 20px;
+        background-color: transparent;
+        margin: auto;
+        height: 20px;
+        border: 1px solid $primaryColor;
+        border-radius: 5px;
+        outline: 0;
+        color: $primaryColor;
+        padding: 5px;
+        margin-top: 20px;
+    }
+    span {
+        font-size: 12px;
+        position: relative;
+        top: -5px;
+    }
+    .readonly {
+        pointer-events: none;
+    }
+    .step1 {
+        position: relative;
+        border: 1px solid;
+        border-color: #fff;
+        padding: 5px 10px;
+        border-radius: 50px;
+        min-width: 70px;
+        display: inline-block;
+    }
+    .step1:after {
+        position: absolute;
+        content: '';
+        background-color: #daa520;
+        width: 280px;
+        height: 2px;
+        top: 50%;
+        left: 80px;
+        right: 0;
+    }
+    .step2 {
+        margin-left: 300px;
+        border: 1px solid;
+        border-color: #fff;
+        padding: 10px;
+        border-radius: 50px;
+        padding: 5px 10px;
+        min-width: 70px;
+        display: inline-block;
+    }
+    .step1.active {
+        background-color: #daa520;
+    }
+      .step2.active {
+        background-color: #daa520;
+    }
+    input{
+        font-size: 15px;
+    }
+}
+.phnField{
+.phoneInputWrapper .PhoneInput {
+    display: flex !important;
+    align-items: center !important;
+    background: transparent !important;
+    height: 41px;
+    border: 1px solid $primaryColor; 
+}
+  span{
+    top: 1px !important;
+    }
+}
+  .countryselect{
+background-color:  transparent !important;
+option{
+color: #121212;
+}
+  }

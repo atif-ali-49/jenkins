@@ -1,0 +1,14 @@
+.service-details{
+    .card{
+        box-shadow: 2px 2px 3px grey;
+        border:none;
+        border-radius: 10px;
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.01);
+        }
+        img{
+            border-radius:10px 10px 0 0;
+        }
+    }
+}

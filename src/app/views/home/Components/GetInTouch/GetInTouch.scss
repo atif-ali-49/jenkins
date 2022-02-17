@@ -1,0 +1,30 @@
+@import '../../../../styles/base/Variables.scss';
+.touchcard {
+    background: #d7d7d7;
+    border-radius: 5px;
+
+    svg{
+        font-size: 60px;
+        color: $primaryColor;
+    }
+    h3{
+        color: #000;
+    }
+}
+.touchcard:hover{
+    background: $primaryColor;
+    cursor: pointer;
+    transition: 0.7s;
+    box-shadow: 0px 2px 5px 2px rgba(34,34,34,0.79);
+    -webkit-box-shadow: 0px 2px 5px 2px rgba(34,34,34,0.79);
+    -moz-box-shadow: 0px 2px 5px 2px rgba(34,34,34,0.79);
+}
+.touchcard:hover h3,a{
+    text-decoration: none !important;
+}
+.touchcard:hover svg{
+    color: #fff;
+}
+.touchcard:hover h3{
+    color: #fff;
+}

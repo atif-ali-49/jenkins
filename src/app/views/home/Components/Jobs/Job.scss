@@ -1,0 +1,67 @@
+@import '../../../../styles/base/Variables.scss';
+.noncrypto-jobs{
+
+    .nav-tabs .nav-link {
+        border: 0;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        color:#fff ;
+        background-color: #000;
+        margin-right: 30px;
+    }
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        color: $primaryColor;
+        background-color: #000;
+       border: 2px solid $primaryColor;
+        font-weight: 700;
+    }
+    .nav-tabs {
+        border-bottom:0;
+    }
+h3{
+    color: $primaryColor;
+}
+svg{
+    font-size: 35px;
+}
+.job-detail{
+    background-color: #f1f0f0;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 7px 30px;
+    border-radius: 5px;
+    p{
+        line-height: 1;
+        color: $primaryColor;
+        font-weight: 700;
+    }
+}
+.services-img{
+width: 35px;
+height: 35px;
+}
+}
+@media screen and (max-width: 767px) {
+    .noncrypto-jobs{
+        .job-detail{
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 7px 10px;       
+        }
+        .svg{
+            font-size: 26px;
+        }
+    }
+}
+@media screen and (max-width: 512px) {
+    .noncrypto-jobs{
+        .job-detail{
+            margin-left: 5px;
+            margin-right: 5px;
+            padding: 7px 10px;       
+        }
+        svg{
+            font-size: 20px;
+        }
+    }
+}

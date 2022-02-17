@@ -1,0 +1,224 @@
+// #livesupport .btn {
+//   background-color: #FEC61D;
+//   color: #000;
+//   font-size: 18px;
+//   border: 0;
+//   margin: 30px 0;
+//   font-weight: 600;
+//   padding-left: 30px;
+//   padding-right: 30px;
+//   border-radius: 10px 20px 4px 10px;
+//   border-bottom-right-radius: 0;
+//   text-transform: uppercase;
+// }
+
+// #livesupport p {
+//   font-size: 18px;
+// }
+
+// @media screen and (max-width: 991px) {
+//   #livesupport h1 {
+//     text-align: center;
+//   }
+// }
+
+// @media screen and (max-width: 500px) {
+//   #livesupport h1 {
+//     text-align: center;
+//     font-size: 28px;
+//     font-weight: 600;
+//   }
+//   #livesupport p {
+//     font-size: 18px;
+//     text-align: center;
+//   }
+// }
+
+// /****************************
+
+// Pkg
+
+// ******************************/
+
+// #smartpkg {
+//   background-image: url("https://media.peacecoin.io/smartback.png");
+//   background-size: cover;
+//   height: auto;
+//   padding: 12% 0 5% 0;
+// }
+
+// .silver-card {
+//   background-color: #fff;
+//   border-radius: 18px;
+//   padding-bottom: 25px;
+//   box-shadow: 0px 4px 6px 4px rgba(112, 105, 105, 0.75);
+//   -webkit-box-shadow: 0px 4px 6px 4px rgba(112, 105, 105, 0.75);
+//   -moz-box-shadow: 0px 4px 6px 4px rgba(112, 105, 105, 0.75);
+// }
+
+// .silver-card img {
+//   position: relative;
+//   top: -30px;
+// }
+
+// .silver-card i {
+//   color: #ffc107;
+//   font-size: 20px !important;
+//   margin-right: 4px;
+// }
+
+// .silver-card i.silver {
+//   color: #B7B7B7;
+// }
+
+// .silver-card i.gold {
+//   color: #E5B41D;
+// }
+
+// .silver-card i.platinum {
+//   color: #5C2A85
+// }
+
+// #smartpkg .silver-card h4 {
+//   font-size: 18px;
+//   text-transform: Uppercase;
+//   line-height: 2;
+// }
+
+// #smartpkg #small {
+//   font-size: 18px;
+// ;
+// }
+
+// #smartpkg .silver-card h4:last-child() {
+//   line-height: unset;
+//   font-size: 40px;
+// }
+
+// .smart-priceimg {
+//   position: relative;
+// }
+
+// .smart-priceimg p {
+//   position: absolute;
+//   top: -5%;
+//   left: 41%;
+//   font-size: 34px;
+//   font-weight: 600;
+// }
+
+// .silver-text {
+//   color: #B7B7B7
+// }
+
+// .gold-text {
+//   color: #E5B41D;
+// }
+
+// .platinum-text {
+//   color: #5C2A85
+// }
+
+// .upgradebtn {
+//   background-color: #004A7F;
+//   -webkit-border-radius: 10px;
+//   border-radius: 10px;
+//   border: none;
+//   color: #FFFFFF;
+//   cursor: pointer;
+//   display: inline-block;
+//   font-size: 20px;
+//   padding: 5px 15px;
+//   text-align: center;
+//   text-decoration: none;
+//   -webkit-animation: glowing 1500ms infinite;
+//   -moz-animation: glowing 1500ms infinite;
+//   -o-animation: glowing 1500ms infinite;
+//   animation: glowing 1500ms infinite;
+//   border-radius: 10px 20px 4px 10px;
+//   border-bottom-right-radius: 0;
+//   text-transform: uppercase;
+// }
+
+// @-webkit-keyframes glowing {
+//   0% {
+//     background-color: #FEC61D;
+//     -webkit-box-shadow: 0 0 3px #FEC61D;
+//   }
+//   50% {
+//     background-color: #FFAB0A;
+//     -webkit-box-shadow: 0 0 30px #FFAB0A;
+//   }
+//   100% {
+//     background-color: #FEC61D;
+//     -webkit-box-shadow: 0 0 3px #FEC61D;
+//   }
+// }
+
+// @-moz-keyframes glowing {
+//   0% {
+//     background-color: #FEC61D;
+//     -moz-box-shadow: 0 0 3px #FEC61D;
+//   }
+//   50% {
+//     background-color: #FFAB0A;
+//     -moz-box-shadow: 0 0 30px #FFAB0A;
+//   }
+//   100% {
+//     background-color: #FEC61D;
+//     -moz-box-shadow: 0 0 3px #FEC61D;
+//   }
+// }
+
+// @-o-keyframes glowing {
+//   0% {
+//     background-color: #FEC61D;
+//     box-shadow: 0 0 3px #FEC61D;
+//   }
+//   50% {
+//     background-color: #FFAB0A;
+//     box-shadow: 0 0 30px #FFAB0A;
+//   }
+//   100% {
+//     background-color: #FEC61D;
+//     box-shadow: 0 0 3px #FEC61D;
+//   }
+// }
+
+// @keyframes glowing {
+//   0% {
+//     background-color: #FEC61D;
+//     box-shadow: 0 0 3px #FEC61D;
+//   }
+//   50% {
+//     background-color: #FFAB0A;
+//     box-shadow: 0 0 30px #FFAB0A;
+//   }
+//   100% {
+//     background-color: #FEC61D;
+//     box-shadow: 0 0 3px #FEC61D;
+//   }
+// }
+
+// @media screen and (max-width: 480px) {
+//   #smartpkg .silver-card h4 {
+//     font-size: 16px;
+//   }
+//   .smart-priceimg p {
+//     position: absolute;
+//     top: 2%;
+//     left: 42%;
+//     font-size: 24px;
+//     font-weight: 600;
+//   }
+// }
+
+// @media screen and (max-width: 415px) {
+//   .smart-priceimg p {
+//     position: absolute;
+//     top: 5%;
+//     left: 42%;
+//     font-size: 24px;
+//     font-weight: 600;
+//   }
+// }

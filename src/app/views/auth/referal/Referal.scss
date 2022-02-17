@@ -1,0 +1,27 @@
+#referal{
+    background-color: #e1e1e1;
+    padding: 70px 0;
+   
+    input{
+        border: 0;
+        outline: none;
+        border: 1px solid rgb(212, 209, 209) ;
+        border-radius: 5px;
+        height: 40px;
+    }
+}
+#referal img{
+    transform: translateY(0px);
+    animation: faq_move 6s ease-in-out infinite;
+  }
+  @keyframes  faq_move {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-35px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+  }

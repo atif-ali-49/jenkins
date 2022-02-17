@@ -1,0 +1,36 @@
+@import '../../../../styles/base/Variables.scss';
+.noncrypto-movement {.detail-movement p{
+border-left: 2px solid $primaryColor;
+}
+.laptop-cover{
+background-image: url("../PeaceMovement/laptoppp.png");
+background-size: cover;
+// width: 100%;
+height: 450px; 
+width: 540px;
+display: flex;
+justify-content: center;
+margin: 0 auto;
+
+video{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 135px;
+}
+
+}
+}
+@media screen and (max-width: 991px) {
+  .noncrypto-movement{
+    .laptop-cover {
+        height: 250px;
+        width: 295px;
+    
+video{
+  padding-bottom: 79px ;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+    }}
+  }

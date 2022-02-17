@@ -1,0 +1,40 @@
+#cart {
+  background-color: #f5f5f5;
+  	.headingcart{
+	color: #686868;
+	}
+  .card-cover {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+
+    svg {
+      font-size: 20px;
+	  cursor: pointer;
+    // border-radius: 50%;
+    // border-color: rgb(245, 244, 243);
+    // border:1px solid;
+    }
+    .crossbtn {
+      position: static;
+      top: 5px;
+      right: 10px;
+    }
+  }
+  .card-cover:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	
+  }
+  .total-cover{
+    padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	border: 0 2px 2px 0 solid #444;
+
+  }
+}

@@ -1,0 +1,114 @@
+@import '../../styles/base/Variables.scss';
+#team{
+     .box{
+         overflow: hidden;
+         position: relative;
+         border-radius: 5%;
+         max-height: 350px;        
+     }
+     .box:hover{
+         background: radial-gradient(black, transparent);
+     }
+     .box:before,
+     .box:after{
+         content: "";
+         background: #0e1318;
+         opacity: 0.5;
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 100%;
+         transition: all 0.35s 0s ease-out;
+         cursor: pointer;
+     }
+     .box:hover:before{ bottom: 0; }
+     .box:after{
+         opacity: 0.6;
+         bottom: 0;
+         top: 100%;
+         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+         transition: all 0.35s 0.2s ease-in;
+         cursor: pointer;
+         
+     }
+     .box:hover:after{ top: 25%; }
+     .box img{
+         width: 100%;
+         height: auto;
+     }
+     .box .box-content{
+         color: #fff;
+         text-align: center;
+         width: 80%;
+         opacity: 0;
+         transform: translateX(-50%) translateY(-55%);
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         z-index: 2;
+         transition: all 0.35s 0.5s ease;
+     }
+     .box:hover .box-content{
+         opacity: 1;
+         transform: translateX(-50%) translateY(-40%);
+     }
+     .box .title{
+         font-size: toRem(26);
+         font-weight: 600;
+         letter-spacing: 0.5px;
+         text-transform: uppercase;
+         margin: 0;
+     }
+     .box .title:after{
+         content: '';
+         height: 1px;
+         width: 100px;
+         margin: 5px auto 3px;
+         border-bottom: 1px dashed #fff;
+         display: block;
+         clear: both;
+     }
+     .box .post{
+         color: #fff;
+         font-size:toRem(15);
+         font-weight: 400;
+         text-transform: capitalize;
+         letter-spacing: 1px;
+     }
+     .box .icon{
+         padding: 0;
+         margin: 0;
+         list-style: none;
+         transform: translateX(-50%);
+         position: absolute;
+         left: 50%;
+         bottom: 10px;
+         z-index: 2;
+     }
+     .box .icon li{
+         margin: 0 3px;
+         display: inline-block;
+         opacity: 0;
+         transition: all 0.4s ease 0.5s;
+     }
+     .box .icon li:nth-child(2){ transition-delay: 0.7s; }
+     .box:hover .icon li{ opacity: 1; }
+     .box .icon li a{
+         color: #333;
+         background-color: #fff;
+         font-size:toRem(13);
+         text-align: center;
+         line-height: 31px;
+         height: 30px;
+         width: 30px;
+         border-radius: 50%;
+         display: block;
+         transition: all 0.3s ease 0s;
+     }
+  
+     .box .icon li a:hover{ box-shadow: 3px 3px rgba(255,255,255,0.5); }
+     @media only screen and (max-width:990px){
+         .box{ margin: 0 0 30px; }
+     }
+ }

@@ -1,0 +1,105 @@
+
+// #blitz {
+//   padding: 5% 0;
+//   margin: 20px 0;
+// }
+.video-column{
+    video{
+    border-radius: 10px;
+    max-width: 500px;
+      height: auto;
+    }
+    }
+// #image-daycover {
+//   position: relative !important;
+// }
+
+// .linkcontainer {
+//   position: absolute !important;
+//   bottom: 20%;
+//   left: 28%;
+// }
+
+// .linkcontainer2 {
+//   position: absolute !important;
+//   top: 44%;
+//   left: 28%;
+// }
+
+// @media (max-width: 991px) {
+//   .linkcontainer a {
+//     font-size: 12px;
+//   }
+//   .linkcontainer2 {
+//     left: 26%;
+//   }
+//   .linkcontainer2 a {
+//     font-size: 12px;
+//   }
+// }
+// h1, h2, h3, h4, h5, h6, p, a {
+//   margin: 0;
+//   padding: 0;
+//   font-family: 'Titillium Web', sans-serif;
+// }
+// @media (max-width: 767px) {
+//   .linkcontainer {
+//     left: 25%;
+//     bottom: 17%;
+//   }
+//   .linkcontainer a {
+//     font-size: 11px;
+//   }
+//   .linkcontainer2 {
+//     left: 27%;
+//     top: 41%;
+//   }
+//   .linkcontainer2 a {
+//     font-size: 10px;
+//   }
+// }
+// @media (max-width: 482px) {
+//   .top-bar p{
+//     font-size: 11px;
+//   }
+//   .top-bar {
+//     padding: 15px 0;
+//   }
+//   #blitz h1 {
+//     font-size: 23px;
+// }
+// }
+// @media (max-width: 430px) {
+//   .linkcontainer {
+//     bottom: 17%;
+//     left: 27%;
+//   }
+//   .linkcontainer a {
+//     font-size: 8px;
+//   }
+//   .linkcontainer2 {
+//     left: 27%;
+//     top: 38%;
+//   }
+//   .linkcontainer2 a {
+//     font-size: 7px;
+//   }
+// }
+
+.bg_code{
+    background-image: url('https://media.peacecoin.io/frontend/pcinvex.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.paddingX-axis {
+    padding: 0 80px;
+    align-items: center;
+  margin-top: 10px;
+}
+.code_head{
+   font-weight: bolder;
+   font-size: 29px;
+    word-spacing: 1.4px;
+font-family: 'Roboto', sans-serif;
+}

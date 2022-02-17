@@ -1,0 +1,206 @@
+
+.noncrypto-heading{
+    color: $headColor;
+    line-height: 1;
+    font-size: toRem($headingSize);
+    font-weight: 700;
+   }
+.secondaryHeading{
+    font-weight: 500;
+    line-height: 1;
+}
+.subheading{
+    color: $primaryColor;
+    font-size: toRem($subHeadingSize);
+    line-height: 1;
+    font-weight: 400;   
+    position: relative;
+}
+.subheading:after{
+    position: absolute;
+    content: "";
+    background-color: $primaryColor;
+    width: 60px;
+    height: 2px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+}
+.paragraph{
+    color: $paraColor;
+    font-size: toRem($paraSize);
+    line-height: 1.4;
+    font-weight: 400;
+}
+.section{
+    padding: 60px 0;
+}
+
+//FONTS
+.f-12{font-size:toRem(12);}
+.f-14{font-size:toRem(14);}
+.f-16{font-size:toRem(16);}
+.f-20{font-size:toRem(20);}
+.f-24{font-size:toRem(24);}
+.f-28{font-size:toRem(28);}
+.f-32{font-size:toRem(32);}
+.f-36{font-size:toRem(36);}
+.f-40{font-size:toRem(40);}
+.f-50{font-size:toRem(50);}
+
+//Margins
+.mt-10{margin-top: 10px;}
+.mt-20{margin-top: 20px;}
+.mt-30{margin-top: 30px;}
+.mt-40{margin-top: 40px;}
+.mt-50{margin-top: 50px;}
+.mt-60{margin-top: 60px;}
+.mt-70{margin-top: 70px;}
+.mt-80{margin-top: 80px;}
+
+.mb-10{margin-bottom: 10px;}
+.mb-20{margin-bottom: 20px;}
+.mb-30{margin-bottom: 30px;}
+.mb-40{margin-bottom: 40px;}
+.mb-50{margin-bottom: 50px;}
+.mb-60{margin-bottom: 60px;}
+.mb-70{margin-bottom: 70px;}
+.mb-80{margin-bottom: 80px;}
+
+
+.ml-10{margin-left: 10px;}
+.ml-20{margin-left: 20px;}
+.ml-30{margin-left: 30px;}
+.ml-40{margin-left: 40px;}
+.ml-50{margin-left: 50px;}
+.ml-60{margin-left: 60px;}
+.ml-70{margin-left: 70px;}
+.ml-80{margin-left: 80px;}
+
+.mr-10{margin-right: 10px;}
+.mr-20{margin-right: 20px;}
+.mr-30{margin-right: 30px;}
+.mr-40{margin-right: 40px;}
+.mr-50{margin-right: 50px;}
+.mr-60{margin-right: 60px;}
+.mr-70{margin-right: 70px;}
+.mr-80{margin-right: 80px;}
+
+
+.mx-10{margin-left: 10px; margin-right: 10px;}
+.mx-20{margin-left: 20px; margin-right: 20px;}
+.mx-30{margin-left: 30px; margin-right: 30px;}
+.mx-40{margin-left: 40px; margin-right: 40px;}
+.mx-50{margin-left: 50px; margin-right: 50px;}
+
+.my-10{margin-top: 10px; margin-bottom: 10px;}
+.my-20{margin-top: 20px; margin-bottom: 20px;}
+.my-30{margin-top: 30px; margin-bottom: 30px;}
+.my-40{margin-top: 40px; margin-bottom: 40px;}
+.my-50{margin-top: 50px; margin-bottom: 50px;}
+
+.mf-10{margin: 10px;}
+.mf-20{margin: 20px;}
+.mf-30{margin: 30px;}
+.mf-40{margin: 40px;}
+.mf-50{margin: 50px;}
+
+//Paddings
+.pt-10{padding-top: 10px;}
+.pt-20{padding-top: 20px;}
+.pt-30{padding-top: 30px;}
+.pt-40{padding-top: 40px;}
+.pt-50{padding-top: 50px;}
+.pt-60{padding-top: 60px;}
+.pt-70{padding-top: 70px;}
+.pt-80{padding-top: 80px;}
+
+.pb-10{padding-bottom: 10px;}
+.pb-20{padding-bottom: 20px;}
+.pb-30{padding-bottom: 30px;}
+.pb-40{padding-bottom: 40px;}
+.pb-50{padding-bottom: 50px;}
+.pb-60{padding-bottom: 60px;}
+.pb-70{padding-bottom: 70px;}
+.pb-80{padding-bottom: 80px;}
+
+.pl-10{padding-left: 10px;}
+.pl-20{padding-left: 20px;}
+.pl-30{padding-left: 30px;}
+.pl-40{padding-left: 40px;}
+.pl-50{padding-left: 50px;}
+.pl-60{padding-left: 60px;}
+.pl-70{padding-left: 70px;}
+.pl-80{padding-left: 80px;}
+
+.pr-10{padding-right: 10px;}
+.pr-20{padding-right: 20px;}
+.pr-30{padding-right: 30px;}
+.pr-40{padding-right: 40px;}
+.pr-50{padding-right: 50px;}
+.pr-60{padding-right: 60px;}
+.pr-70{padding-right: 70px;}
+.pr-80{padding-right: 80px;}
+
+.px-10{padding-left: 10px; padding-right: 10px;}
+.px-20{padding-left: 20px; padding-right: 20px;}
+.px-30{padding-left: 30px; padding-right: 30px;}
+.px-40{padding-left: 40px; padding-right: 40px;}
+.px-50{padding-left: 50px; padding-right: 50px;}
+
+.py-10{padding-top: 10px; padding-bottom: 10px;}
+.py-20{padding-top: 20px; padding-bottom: 20px;}
+.py-30{padding-top: 30px; padding-bottom: 30px;}
+.py-40{padding-top: 40px; padding-bottom: 40px;}
+.py-50{padding-top: 50px; padding-bottom: 50px;}
+
+.pf-10{padding:10px;}
+.pf-20{padding: 20px;}
+.pf-30{padding: 30px;}
+.pf-40{padding: 40px;}
+.pf-50{padding: 50px;}
+
+//font-weights
+.fWeight-200{
+    font-weight: 200;
+}
+.fWeight-300{
+    font-weight: 300;
+}
+.fWeight-400{
+    font-weight: 400;
+} 
+.fWeight-500{
+    font-weight: 500;
+}
+.fWeight-600{
+    font-weight: 600;
+}
+.fWeight-700{
+    font-weight: 700;
+}
+
+.poppin-bold{
+    font-family: 'poppin-regula';
+}
+
+//backgrounds
+.bgPrimary{
+    background-color: $primaryColor;
+}
+.bgLight{
+    background-color: #ebebeb;
+}
+.bgDark{
+    background-color: #000;
+}
+@media screen and (max-width: 991px) {
+.noncrypto-heading{
+    color: $headColor;
+    line-height: 1;
+    font-size: toRem($headingSizeMob);
+    font-weight: 700;
+   }
+
+}

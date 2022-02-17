@@ -1,0 +1,85 @@
+// #faqscrypto {
+//   padding: 0 0 15px 0;
+//   /* background-image: url("img/phone.png");
+//   background-size: cover;
+//   height: auto; */
+//   background: #E6E6E6;
+// }
+
+// #main {
+//   margin: 20px 0;
+//   border: 1px solid #E6E6E6;
+//   padding-top: 20px;
+// }
+
+// #main #faq .card {
+//   margin-bottom: 30px;
+//   border: 0;
+// }
+
+// #main #faq .card .card-header {
+//   border: 0;
+//   -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+//   box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+//   border-radius: 2px;
+//   padding: 0;
+// }
+
+// #main #faq .card .card-header .btn-header-link {
+//   color: #fff;
+//   display: block;
+//   text-align: left;
+//   background: #FFE472;
+//   color: #222;
+//   padding: 10px;
+// }
+
+// #main #faq .card .card-header .btn-header-link:after {
+//   content: "\f107";
+//   font-family: 'Font Awesome 5 Free';
+//   font-weight: 900;
+//   float: right;
+// }
+
+// #main #faq .card .card-header .btn-header-link.collapsed {
+//   background-color: rgba(255, 171, 10, 0.8);
+//   color: #fff;
+// }
+
+// #main #faq .card .card-header .btn-header-link.collapsed:after {
+//   content: "\f106";
+// }
+
+// #main #faq .card .collapsing {
+//   background: #FFE472;
+//   line-height: 20px;
+// }
+
+// #main #faq .card .collapse {
+//   border: 0;
+// }
+
+// #main #faq .card .collapse.show {
+//   background: #FFE472;
+//   line-height: 20px;
+//   color: #222;
+// }
+
+// #faqs .section-title:after {
+//   border-bottom: 0.2em solid #fff;
+// }
+// .faq_mobile{
+//   transform: translateY(0px);
+//   animation: faq_move 6s ease-in-out infinite;
+// }
+// @keyframes  faq_move {
+//   0%{
+//       transform: translateY(0px);
+//   }
+//   50%{
+//       transform: translateY(-35px);
+//   }
+//   100%{
+//       transform: translateY(0px);
+//   }
+// }

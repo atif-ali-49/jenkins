@@ -1,0 +1,8 @@
+// styles
+@import '../../styles/base/Variables.scss';
+#home .heading{
+    color: $headColor;
+    line-height: 1;
+    font-size: toRem($headingSize);
+    font-weight: 700;
+   }

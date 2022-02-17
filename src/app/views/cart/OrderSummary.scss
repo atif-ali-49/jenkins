@@ -1,0 +1,61 @@
+@import '../../styles/base/Variables.scss';
+#orderSummary{
+    label{
+margin-bottom: 0.2rem;
+    }
+p{
+margin-bottom: 0;
+}
+.summary-card{
+border: 1px solid #e1e2e3;
+border-radius: 5px;
+}
+.summary-head{
+border-bottom: 1px solid #e1e2e3;
+}
+.summary-body{
+border-bottom: 1px solid #e1e2e3;
+padding-bottom: 20px;
+}
+.summary-footer{
+border-top: 1px solid #e1e2e3;
+}
+.item{
+border-bottom: 1px solid #e1e2e3;
+}
+.item:last-child{
+border-bottom: none;
+}
+.accordian{
+svg{
+font-size: 24px;
+color: $primaryColor;
+margin-top: -2px;
+margin-right: 5px;
+}
+.card-header{
+cursor: pointer;
+}
+.btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: none;
+}
+.card-icons{
+img{
+margin: 0 10px;
+}
+}
+
+}
+
+.form-group{
+position: relative;
+margin-bottom:35px;
+
+.text-danger.font-weight-lighter{
+position: absolute;
+bottom: -25px;
+}
+
+}
+}
